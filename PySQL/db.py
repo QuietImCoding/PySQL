@@ -5,6 +5,7 @@ c = None
 location = None
 initError = "You have to initialize the database first. Run db.init(*filename*)"
 
+#Also important
 def init(filename):
     global database
     global c
@@ -60,6 +61,7 @@ def add(tablename, items):
     else:
         print initError
 
+#Important
 def close():
     database.commit()
     database.close()
