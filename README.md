@@ -12,6 +12,7 @@ A simplified sql module based on sqlite3
 
 * the first command you always want to run is db.init([filename])
 * Other commands are:
-	- gettables() : returns a list of all the tables in the database
-	- maketable(String tablename, dict rows) : creates a table with name tablename and uses the rows dict for field names. Format should be { "namea" : "TYPE", "nameb" : "TYPE" etc.... }
+	- tables() : returns a list of all the tables in the database
+	- columns(String tablename) : returns a dictionary of all the fields in a database and their types
+	- create(String tablename, dict rows) : creates a table with name tablename and uses the rows dict for field names. Format should be { "namea" : "TYPE", "nameb" : "TYPE" etc.... }
 	- add(String tablename, List items): inserts all of the items in the items list into table tablename
